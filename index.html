@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box
+    }
+
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&display=swap");
+
+    body {
+        font-family: "Noto Sans JP", sans-serif;
+    }
+
+    header {
+        background-image: url(https://github.com/kevin-powell/shoes/blob/master/img/shoe-3.png?raw=true);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        text-align: center;
+        background-color: rgb(51, 50, 50);
+        background-blend-mode: multiply;
+        color: white;
+        padding: 15rem 0px;
+    }
+header P {
+    padding-bottom: 30PX;
+}
+    h1 {
+        font-size: 75px;
+        padding-bottom: 30px;
+    }
+
+    header button{
+        text-decoration: none;
+        color: white;
+        background-color: orange;
+        padding: 10px 20px;
+        font-weight: bold;
+        font-size: 20PX;
+    }
+
+    .container {
+        color: #333;
+        text-align: center;
+        background-color: #eee;
+        display: grid;
+        padding: 7rem 0;
+        padding-bottom: 130px;
+    }
+
+    .div1 {
+        background-color: #2193b0;
+        margin-top:90px ;
+        border-radius: 50%;
+        position: relative;
+    }
+    .div1:hover{
+        transition: all 0.4s ease-in-out;
+        transform: scale(1.1,1.1);
+.dollar{
+    display: block;
+}
+    }
+.dollar{
+    position: absolute;
+    /* bottom: 0; */
+    left: 50px;
+    display: none;
+}
+b{
+    font-weight: bold;
+    font-size: 40px;
+}
+    .shoes {
+        display: flex;
+        justify-content: center;
+        gap: 120px;
+    }
+
+    .shoeimg {
+        height: 200px;
+        width: 200px;
+        margin-right: -40px;
+        /* position: relative; */
+    }
+    .sneakers{
+        display: grid;
+        gap: 100px;
+        width:70% ;
+        justify-content: center;
+        margin-left: 250px;
+    }
+    .h1{
+        text-align: center;
+        padding: 7rem 0 0 0;
+        font-size: 75px;
+    }
+    .box{
+        display: flex;
+border-radius: 10px;
+padding-top: 60px;
+    }
+    .box h1{
+        font-size: 80px;
+        line-height: 80px;
+        font-weight: bold;
+        padding-bottom: 30px;
+        color: white;
+    }
+    .box p{
+        line-height: 30px;
+        padding-bottom: 60px;
+    }
+    .box button{
+        color: white;
+        border: none;
+       font-size: 20px;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 3px;
+    }
+    .box1 button{
+        background-color: #a1173c;
+    }
+    .box2 button{
+        background-color: #2f4858;
+    }
+    .box3 button{
+        background-color: #008951;
+    }
+button:hover{
+        transition: all 0.3s ease-in-out;
+        transform: scale(1.1 ,1.1);
+
+    }
+    .box1 img{
+        height: 500px;
+    margin-right: -35px;
+    }
+    .box2 img{
+        height: 500px;
+    margin-left: -35px;
+    }
+    .box3 img{
+        height: 500px;
+    margin-right: -35px;
+    }
+    .box1{
+        background-color:  #e48d00;
+        padding-left: 30px;
+    }
+.box2{
+    background-color: #eac886;
+}
+.box3{
+    background-color: #2193b0;
+    padding-left: 30px;
+    margin-bottom: 100px;}
+   
+    
+    @media(max-width:768px){
+        .shoes{
+            display: flex;
+            gap: 150px;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .box{
+            text-align: center;
+        }
+        .box1{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .box3{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .box2{
+            display: flex;
+            flex-direction: column;
+        }
+        .sneakers{
+            width: 30%;
+        }
+        .box button{
+            margin-bottom: 70px;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <div>
+            <h1>IT'S OKAY TO BE A LITTLE <br>OBSESSED WITH SHOES</h1>
+            <P> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam
+                perspiciatis facilis beatae laudantium quidem enim sit sequi!
+            </P>
+            <!-- <a class="btn" href="">SEE WHAT WE HAVE</a> -->
+            <button>SEE WHAT WE HAVE</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Featured sneakers</h1>
+        <div class="shoes">
+            <div class="div1">
+                <a href="#">
+                    <img class="shoeimg" src="https://github.com/kevin-powell/shoes/blob/master/img/shoe-4.png?raw=true"
+                        alt="">
+                </a>
+                <br>
+                <p class="dollar"><span> <b>$99 </b></span> <br> shoe name</p>
+            </div>
+            <div class="div1">
+                <a href="">
+                    <img class="shoeimg" src="https://github.com/kevin-powell/shoes/blob/master/img/shoe-5.png?raw=true"
+                        alt="">
+                </a>
+                <br>
+                <p  class="dollar"><span> <b>$99 </b></span> <br>shoe name</p>
+            </div>
+            <div class="div1">
+                <a href="">
+                    <img class="shoeimg" src="https://github.com/kevin-powell/shoes/blob/master/img/shoe-6.png?raw=true"
+                        alt="">
+                </a>
+                <br>
+                <p  class="dollar"><span> <b>$99 </b></span> <br>shoe name</p>
+            </div>
+        </div>
+    </div>
+    <div class="sneakers">
+        <h1 class="h1">Our sneakers</h1>
+        <div class="box box1">
+            
+                <div>
+                    <h1>A REALLY <br> NICE <br> SHOE</h1>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam
+                        perspiciatis facilis beatae laudantium quidem enim sit sequi!</p>
+                    <!-- <a class="btn" href="BUY NOW">BUY NOW</a> -->
+                    <button>BUY NOW</button>
+                </div>
+                <div>
+                    <img src="https://github.com/kevin-powell/shoes/blob/master/img/shoe-1.png?raw=true" alt="">
+                </div>
+            
+        </div>
+        <div class="box box2">
+            <div>
+                <img src="https://github.com/kevin-powell/shoes/blob/master/img/shoe-2.png?raw=true" alt="">
+            </div>
+            <div>
+                <h1>A REALLY <br> NICE <br> SHOE</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam
+                    perspiciatis facilis beatae laudantium quidem enim sit sequi!</p>
+                <!-- <a class="btn" href="BUY NOW">BUY NOW</a> -->
+                <button>BUY NOW</button>
+            </div>
+        </div>
+        <div class="box box3">
+            <div>
+                <h1>A REALLY <br> NICE <br> SHOE</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam
+                    perspiciatis facilis beatae laudantium quidem enim sit sequi!</p>
+                <!-- <a class="btn" href="BUY NOW">BUY NOW</a> -->
+                <BUtton>BUY NOW</BUtton>
+            </div>
+            <div>
+                <img src="https://github.com/kevin-powell/shoes/blob/master/img/shoe-3.png?raw=true" alt="">
+            </div>
+        </div>
+            </div>
+    </section>
+    </main>
+</body>
+
+</html>
